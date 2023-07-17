@@ -28,6 +28,7 @@ public class Apply  {
 		Thread.sleep(13000);
 		//action.click(driver.findElement(By.xpath("//span[@class='form-btn-arrow btn-right-arrow']"))).build().perform();
 		driver.findElement(By.xpath("//span[@class='form-btn-arrow btn-right-arrow']")).submit();
+		System.out.println("ResumeFile uploaded successfullky");
 	
 		
 		
