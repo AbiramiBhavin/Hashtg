@@ -16,7 +16,7 @@ public class UIverifications {
 		WebDriver driver;
 		driver = new ChromeDriver();
 		
-		//to check if the Url is same
+		//to check if the URL is same
 		driver.get("https://www.hashtag-ca.com/careers/apply?jobCode=QAE001");
 		String expectedUrl="https://www.hashtag-ca.com/careers/apply?jobCode=QAE001";
 		Thread.sleep(10000);
@@ -24,7 +24,7 @@ public class UIverifications {
 		Assert.assertEquals(expectedUrl, actualUrl);
 		System.out.println("Url is same and it is verified");
 		
-		//To check if the logo is displayed
+		//To check if the LOGO is displayed
 		WebElement img = driver.findElement(By.xpath("//img[@id='logo']"));
 		Assert.assertTrue(img.isDisplayed());
 		System.out.println("Logo is displayed and it is verified");
@@ -37,7 +37,7 @@ public class UIverifications {
 		System.out.println("Service icon is clickable and displayed");
 		}
 		
-		//Other options are displayed like Contactus
+		//Other options are displayed like Contact us
 		WebElement Shopify = driver.findElement(By.linkText("Shopify"));
 		Assert.assertTrue(Shopify.isDisplayed());
 		System.out.println("Shopify icon is Displayed");
@@ -86,7 +86,7 @@ public class UIverifications {
 		Assert.assertTrue(ins.isDisplayed());
 		System.out.println("Ln,fb,insta icons are displayed");
 		
-		//to check if the location is avaialable
+		//to check if the location is available
 		WebElement loc = driver.findElement(By.id("footer-location"));
 		Assert.assertTrue(loc.isDisplayed());
 		System.out.println("Location details are Displayed");
@@ -96,7 +96,7 @@ public class UIverifications {
 		Assert.assertTrue(ct.isDisplayed());
 		System.out.println("Contact details are Displayed");
 		
-		//to check if email is availabl in site
+		//to check if email is available in site
 		WebElement mail = driver.findElement(By.xpath("//a[text()='info@hashtag-ca.com']"));
 		Assert.assertTrue(mail.isDisplayed());
 		System.out.println("Mail detail is Displayed");
@@ -117,7 +117,7 @@ public class UIverifications {
 			System.out.println("En button is clickable and displayed");
 		}
 		
-		//to check if lets speak is clickable
+		//to check if lets speak is click
 		Thread.sleep(10000);
 		WebElement ls = driver.findElement(By.xpath("//a[@href='/contact-us']//parent::button[1]"));
 		ls.click();
